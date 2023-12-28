@@ -1,1 +1,189 @@
-/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+$space-u2: 8px;
+$space-u3: 12px;
+
+$color-ui1: #f5f6f7;
+$color-ui2: #dee1e5;
+$color-ui3: #c1c6cc;
+$color-ui4: #939ba5;
+$color-ui5: #262d33;
+$color-text3: #4c535b;
+
+$fontWeight-normal: "400";
+$fontWeight-medium: "500";
+$fontWeight-semiBold: "500";
+$fontWeight-bold: "500";
+
+$fontSize-xxxxxlarge: 2.75rem;
+$fontSize-xxxxlarge: 2.25rem;
+$fontSize-xxxlarge: 1.75rem;
+$fontSize-xxlarge: 1.375rem;
+$fontSize-xlarge: 1.125rem;
+$fontSize-medium: 1rem;
+$fontSize-small: 0.875rem;
+$fontSize-xsmall: 0.75rem;
+$fontSize-xxsmall: 0.6875rem;
+
+.space-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+// $space: (
+//   none: "0rem",
+//   u05: "0.125rem",
+//   u1: "0.25rem",
+//   u2: "0.5rem",
+//   u3: "0.75rem",
+//   u4: "1rem",
+//   u5: "1.25rem",
+//   u6: "1.5rem",
+//   u7: "1.75rem",
+//   u8: "2rem",
+//   u9: "2.25rem",
+//   u10: "2.5rem",
+//   u11: "2.75rem",
+//   u12: "3rem",
+//   u13: "3.25rem",
+//   u14: "3.5rem",
+//   u15: "3.75rem",
+//   u16: "4em",
+// );
+
+// $colors: (
+//   "background": #ffffff,
+//   "key": #1a73e8,
+//   "pageBackground": #ffffff,
+//   "text": #262d33,
+//   "calculation": #319220,
+//   "critical": #cc1f36,
+//   "dimension": #31689e,
+//   "inform": #0087e1,
+//   "link": #0059b2,
+//   "measure": #c2772e,
+//   "positive": #24b25f,
+//   "warn": #ffa800,
+//   "body": #262d33,
+//   "field": #ffffff,
+//   "inverse": #262d33,
+//   "inverseOn": #ffffff,
+//   "linkInteractive": #0063c6,
+//   "neutral": #71767a,
+//   "title": #262d33,
+//   "informAccent": #d6ebfa,
+//   "positiveAccent": #dbf2e5,
+//   "warnAccent": #fff1d6,
+//   "ui1": #f5f6f7,
+//   "ui2": #dee1e5,
+//   "ui3": #c1c6cc,
+//   "ui4": #939ba5,
+//   "ui5": #262d33,
+//   "text1": #939ba5,
+//   "text2": #707781,
+//   "text3": #4c535b,
+//   "text4": #343c42,
+//   "text5": #262d33,
+//   "keySubtle": #e8f1fc,
+//   "keyAccent": #dae8fb,
+//   "keyFocus": #75abf1,
+//   "keyInteractive": #2d7eea,
+//   "keyPressed": #1463ca,
+//   "keyText": #ffffff,
+//   "keyBorder": #1a73e8,
+//   "criticalSubtle": #f9e8ea,
+//   "criticalAccent": #f6dbde,
+//   "criticalFocus": #e07886,
+//   "criticalInteractive": #dd223b,
+//   "criticalPressed": #ad1a2e,
+//   "criticalText": #ffffff,
+//   "criticalBorder": #cc1f36,
+//   "neutralSubtle": #f0f1f1,
+//   "neutralAccent": #e8e9e9,
+//   "neutralFocus": #a9acaf,
+//   "neutralInteractive": #7b8085,
+//   "neutralPressed": #606467,
+//   "neutralText": #ffffff,
+//   "neutralBorder": #71767a,
+//   "positiveSubtle": #e9f7ef,
+//   "positiveFocus": #7bd09f,
+//   "positiveInteractive": #27c368,
+//   "positivePressed": #1e944f,
+//   "positiveText": #ffffff,
+//   "positiveBorder": #24b25f,
+//   "calculationSubtle": #eaf4e8,
+//   "calculationAccent": #deeddb,
+//   "calculationFocus": #83bd79,
+//   "calculationInteractive": #37a324,
+//   "calculationPressed": #27751a,
+//   "calculationText": #ffffff,
+//   "calculationBorder": #319220,
+//   "dimensionSubtle": #eaeff5,
+//   "dimensionAccent": #dee6ef,
+//   "dimensionFocus": #83a4c4,
+//   "dimensionInteractive": #3672ae,
+//   "dimensionPressed": #295683,
+//   "dimensionText": #ffffff,
+//   "dimensionBorder": #31689e,
+//   "measureSubtle": #f8f1ea,
+//   "measureAccent": #f5e9dd,
+//   "measureFocus": #daad81,
+//   "measureInteractive": #cf8135,
+//   "measurePressed": #a56527,
+//   "measureText": #ffffff,
+//   "measureBorder": #c2772e,
+//   "illustration1": #ea4335,
+//   "illustration2": #4285f4,
+//   "illustration3": #34a853,
+//   "illustration4": #fbbc04,
+//   "illustration5": #dadce0,
+// );
+// $fonts: (
+//   "brand": #{"Google Sans",
+//   "Noto Sans",
+//   "Noto Sans JP",
+//   "Noto Sans CJK KR",
+//   "Noto Sans Arabic UI",
+//   "Noto Sans Devanagari UI",
+//   "Noto Sans Hebrew",
+//   "Noto Sans Thai UI",
+//   Helvetica,
+//   Arial,
+//   sans-serif},
+//   "body": #{Roboto,
+//   "Noto Sans",
+//   "Noto Sans JP",
+//   "Noto Sans CJK KR",
+//   "Noto Sans Arabic UI",
+//   "Noto Sans Devanagari UI",
+//   "Noto Sans Hebrew",
+//   "Noto Sans Thai UI",
+//   Helvetica,
+//   Arial,
+//   sans-serif},
+//   "code": #{"Roboto Mono",
+//   Monaco,
+//   Menlo,
+//   "Ubuntu Mono",
+//   Consolas,
+//   source-code-pro,
+//   monospace},
+// );
+// $fontWeights: (
+//   "normal": 400,
+//   "medium": 500,
+//   "semiBold": 500,
+//   "bold": 500,
+// );
+// $fontSizes: (
+//   "xxxxxlarge": 2.75rem,
+//   "xxxxlarge": 2.25rem,
+//   "xxxlarge": 1.75rem,
+//   "xxlarge": 1.5rem,
+//   "xlarge": 1.375rem,
+//   "large": 1.125rem,
+//   "medium": 1rem,
+//   "small": 0.875rem,
+//   "xsmall": 0.75rem,
+//   "xxsmall": 0.6875rem,
+// );

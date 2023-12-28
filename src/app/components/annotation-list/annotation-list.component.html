@@ -1,0 +1,27 @@
+<div class="space-vertical .annotation-list">
+  <div class="header-box">
+    <h2 i18n>Annotations</h2>
+    <button
+      mat-icon-button
+      matTooltip="Close"
+      aria-label="Close the annotations panel"
+      (click)="close()"
+    >
+      <close-icon></close-icon>
+    </button>
+  </div>
+  <div class="content-box">
+    <div
+      *ngFor="let annotation of annotationDataService.annotations"
+      class="item-box"
+    >
+      <div class="action-box"></div>
+      <h3>{{ annotation.title }}</h3>
+      <p>{{ annotation.body }}</p>
+      <div class="item-box-footer">
+        {{ annotation.lastUpdated | date : " MM/dd/yyyy hh:mm a" }}
+      </div>
+    </div>
+    <div class="footer-box">Hide annotations</div>
+  </div>
+</div>

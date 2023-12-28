@@ -1,0 +1,46 @@
+@import "../../../styles.scss";
+
+.annotation-list {
+  gap: $space-u2;
+  height: 100%;
+  width: 100%;
+  align-items: "stretch";
+}
+
+.header-box {
+  border-bottom: 0.5px solid $color-ui2;
+  padding: $space-u3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+}
+
+.header-box > h2 {
+  margin: 0;
+}
+
+.content-box > h2 {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.footer-box {
+  border-top: 0.5px solid $color-ui2;
+  padding: $space-u3;
+}
+
+.item-box {
+  border-top: 0.5px solid $color-ui2;
+  padding: $space-u2;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.item-box-footer {
+  font-size: $fontSize-xsmall;
+  color: $color-text3;
+}
